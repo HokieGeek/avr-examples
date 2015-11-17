@@ -2,7 +2,7 @@
 #include <util/delay.h>
 
 int main() {
-    const int ledPin = PB4;
+    const int ledPin = PB3;
 
     DDRB |= (1 << ledPin);
 
@@ -12,6 +12,6 @@ int main() {
         } else {
             PORTB |= (1 << ledPin);
         }
-        _delay_ms(500);
+        _delay_ms(750);
     }
 }
